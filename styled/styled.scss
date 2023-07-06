@@ -139,7 +139,7 @@ body._lock {
   border: 1px dashed #1a0a03;
   @media (min-width: 666px) {
     padding: 10px 0 10px 30px;
-    transform: skewX(30deg);
+    transform: skewX(130deg);
   }
 }
 
@@ -333,6 +333,66 @@ body._lock {
         margin-top: 10px;
         text-align: center;
     }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.teeth-list {
+  @media (min-width: 1050px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, minmax(30px, 1fr));
+    row-gap: 60px;
+    column-gap: 60px;
+  }
+  
+
+  // .teeth-list__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    @media (min-width: 1050px) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+  }
+
+  // .teeth-list__image
+
+  &__image {
+    width: 230px;
+    height: 143px;
+    box-shadow: 6px 6px 30px 3px rgba(97, 5, 5, 0.4);
+    border-radius: 10px;
+  }
+
+  // .teeth-list__body
+
+  &__body {
+    text-align: center;
+    @media (min-width: 1050px) {
+      text-align: start;
+    }
+    
+  }
+
+  // .teeth-list__title
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  // .teeth-list__text
+
+  &__text {
+  }
 }
 
 /*-----------------------------------------------------------------HEADER----------------------------------------------------------*/
@@ -582,56 +642,358 @@ body._lock {
         
     }
 }
-.treatment {
 
-    // .treatment__container
+/*-------------------------------------------------------PERFECT-TEETH---------------------------------------------------------------------------------------*/
 
-    &__container {
-    }
+.page {
+
+  // .page__perfect-teeth
+
+  &__perfect-teeth {
+  }
 }
-.treatment-block {
+.perfect-teeth {
 
-    // .treatment-block__body
+  // .perfect-teeth__container
 
-    &__body {
-       
+  &__container {
+    margin-bottom: 50px;
+  }
+
+
+  // .perfect-teeth__title
+
+  &__title {
+    color: var(--main-color);
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 15px 0;
+    @media (min-width: 1050px) {
+      font-size: 36px;
+      text-align: start;
+      margin: 30px 0;
     }
+  }
 
-    // .treatment-bloc__title
+  // .perfect-teeth__list
 
-    &__title {
-     
+  &__list {
+    margin-bottom: 15px;
+    @media (min-width: 1050px) {
+      margin-bottom: 30px;
     }
+    
+  }
 
-    // .treatment-bloc__form
+  // .perfect-teeth__phrase
 
-    &__form {
+  &__phrase {
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0px 0px 40px 4px rgba(59, 38, 21, 0.1);
+    border-radius: 10px;
+    @media (min-width: 1050px) {
+      font-size: 24px;
     }
-
-    // .treatment-bloc__label
-
-    &__label {
-        
-    }
-
-    // .treatment-bloc__input
-
-    &__input {
-        
-    }
-
-    // .treatment-bloc__submit
-
-    &__submit {
-        
-    }
-
-    //treatment-bloc__text
-
-    &__text{
-       
-    }
+    
+  }
 }
+
+
+/*-------------------------------------------------------SMILE-IMPLANT----------------------------------------------------------------------------------------------------------*/
+
+.page {
+
+  // .page__smile-implant
+
+  &__smile-implant {
+  }
+}
+.smile-implant {
+
+  // .smile-implant__container
+
+  &__container {
+    padding-bottom: 50px;
+  }
+
+  // .smile-implant__title
+
+  &__title {
+    
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: center;
+    @media (min-width: 1050px){
+      font-size: 36px;
+      text-align: start;
+      padding-top: 30px;
+    }
+  }
+
+  // .smile-implant__subtitle
+
+  &__subtitle{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+    @media (min-width: 1050px){
+      font-size: 20px;
+      text-align: start;
+    }
+  }
+
+  // .smile-implant__image
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    img{
+      width: 100%;
+      @media (min-width: 730px) {
+        width: 700px;
+      }
+    }
+  }
+}
+
+
+/*----------------------------------------------------------------------SUGGESTIONS------------------------------------------------------------------------------------------*/
+
+.page {
+
+  // .page__suggestions
+
+  &__suggestions {
+  }
+}
+.suggestions {
+
+  // .suggestions__container
+
+  &__container {
+  }
+
+  // .suggestions__title
+
+  &__title {
+    font-size: 34px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  // .suggestions__contant
+
+  &__contant {
+    
+    @media (min-width: 1140px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  // .suggestions__left
+
+  &__left {
+  }
+
+  // .suggestions__subtitle
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 300;
+
+    &_one{
+      margin-bottom: 20px;
+      @media (min-width: 570px) {
+        margin-bottom: 50px;
+      }
+    }
+    &_two{
+      margin-top: 20px;
+      @media (min-width: 570px) {
+        margin-top: 60px;
+      }
+    }
+  }
+
+  // .suggestions__list
+
+  &__list {
+    display: grid;
+    row-gap: 30px;
+    @media (min-width: 570px) {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, minmax(30px, 1fr));
+    row-gap: 60px;
+    }
+      
+  }
+
+  // .suggestions__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  // .suggestions__icon
+
+  &__icon{
+
+  }
+
+  // .suggestions__text
+
+  &__text{
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 400;
+    @media (min-width: 570px) {
+      font-size: 22px;
+    }
+  }
+
+  // .suggestions__image
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px 4px rgba(59, 38, 21, 0.4);
+    @media (min-width: 570px) {
+      width: 552px;
+    height: 368px;
+    }
+    }
+    
+  }
+}
+
+/*-------------------------------------------------------------------------DIGITAL-PROTOCOL-------------------------------------------------------------------------------------------------*/
+
+.page {
+
+  // .page__digital-protocol
+
+  &__digital-protocol {
+    padding-bottom: 50px;
+  }
+}
+.digital-protocol {
+
+  // .digital-protocol__container
+
+  &__container {
+  }
+
+  // .digital-protocol__title
+
+  &__title {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  // .digital-protocol__list
+
+  &__list {
+  }
+
+  // .digital-protocol__item
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+
+  }
+
+  // .digital-protocol__image
+
+  &__image {
+    width: 499px;
+    height: 241px;
+    object-fit: cover;
+    border-radius: 25px;
+    background-color: #fff705;
+    box-shadow: 10px 10px 40px 4px rgba(102, 52, 11, 0.4);
+    &_2{
+      width: 310px;
+      height: 297px;
+    }
+  }
+
+  // .digital-protocol__body
+
+  &__body {
+    max-width: 600px;
+    p{
+      &:not(:last-child){
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  // .digital-protocol__title-item
+
+  &__title-item {
+    font-size: 24px;
+    line-height: 1.55;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  // .digital-protocol__video
+
+  &__video {
+    position: relative;
+  }
+}
+.video-protocol {
+
+  // .video-protocol__parallelogram
+
+  &__parallelogram {
+  }
+
+  // .video-protocol__title
+
+  &__title {
+    transform: skewX(-130deg);
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
+  // .video-protocol__button-play
+
+  &__button-play {
+   
+    position: absolute;
+    top: -110%;
+    left: -18%;
+    transform: skewX(-130deg);
+    img{
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+.parallelogram {
+}
+
 
 
 /*-----------------------------------------------------------------FOOTER----------------------------------------------------------*/
