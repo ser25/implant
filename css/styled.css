@@ -747,6 +747,106 @@ body._lock {
   height: 150px;
 }
 
+/*--------------------------------------------------------------------------STANDARDS---------------------------------------------------------------------------------------------*/
+.page__standards {
+  padding-bottom: 100px;
+}
+
+.standards__title {
+  font-size: 36px;
+  font-weight: 500;
+  max-width: 860px;
+  margin-bottom: 20px;
+}
+.standards__content {
+  max-width: 960px;
+  margin-bottom: 50px;
+  margin-bottom: 80px;
+}
+.standards__content p {
+  font-size: 18px;
+  font-weight: 300;
+}
+.standards__content p:not(:last-child) {
+  margin-bottom: 15px;
+}
+.standards__images {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1050px) {
+  .standards__images {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.standards__image {
+  width: 270px;
+  border-radius: 25px;
+  background-size: cover;
+  box-shadow: 10px 10px 40px 4px rgba(38, 47, 112, 0.3);
+}
+@media (min-width: 550px) {
+  .standards__image {
+    width: 420px;
+    height: 262px;
+  }
+}
+.standards__image_2 {
+  align-self: center;
+  transform: translate(0, -30%);
+}
+@media (min-width: 1050px) {
+  .standards__image_2 {
+    position: absolute;
+    top: -15%;
+    left: 28%;
+    z-index: 2;
+    width: 550px;
+    height: 343px;
+    transform: none;
+    align-self: normal;
+  }
+}
+.standards__image_3 {
+  transform: translate(0, -40%);
+  align-self: flex-end;
+}
+@media (min-width: 1050px) {
+  .standards__image_3 {
+    transform: none;
+    align-self: normal;
+  }
+}
+
+/*-----------------------------------------------------REVIEW-------------------------------------------------------------------------------*/
+.review__title {
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: 500;
+  max-width: 1050px;
+}
+.review__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 1221px) {
+  .review__body {
+    justify-content: space-between;
+  }
+}
+.review__image img {
+  width: 100%;
+}
+@media (min-width: 1221px) {
+  .review__image img {
+    width: 690px;
+  }
+}
 /*-----------------------------------------------------------------FOOTER----------------------------------------------------------*/
 .footer {
   height: 100px;
