@@ -103,6 +103,12 @@ body._lock {
   );
 }
 /*-------------------------------------------------BEM--------------------------------------------------------------------*/
+.order_1{
+  order: 2;
+}
+.order_2{
+  order: 1;
+}
 .button {
   display: inline-block;
   font-weight: 500;
@@ -1210,8 +1216,555 @@ body._lock {
   &__text {
   }
 }
-.button {
+
+/*----------------------------------------------------------------HELP-YOU-------------------------------------------------------------------*/
+
+
+.page {
+
+  // .page__help-you
+
+  &__help-you {
+  }
 }
+.help-you {
+
+  // .help-you__container
+
+  &__container {
+  }
+
+  // .help-you__title
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  // .help-you__list
+
+  &__list {
+  }
+}
+
+
+/*----------------------------------------------------RECOMMENDATIONS-----------------------------------------------------------------------------------------*/
+
+.page {
+
+  // .page__recommendations
+
+  &__recommendations {
+  }
+}
+.recommendations {
+
+  // .recommendations__container
+
+  &__container {
+  }
+
+  // .recommendations__title
+
+  &__title {
+  }
+
+  // .recommendations__body
+
+  &__body {
+    display: grid;
+  grid-template-rows: 1fr;
+  @media (min-width: 650px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1150px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  }
+  
+
+  // .recommendations__item
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    img{
+      width: 100%;
+      @media (min-width: 400px) {
+        width: 272px;
+      height: 372px;
+      }
+    }
+  }
+}
+
+
+/*---------------------------------------------------------------FEEDBACK---------------------------------------------------------------------------------------------*/
+
+.page {
+
+  // .page__feedback
+
+  &__feedback {
+  }
+}
+.feedback {
+
+  // .feedback__container
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .feedback__title
+
+  &__title {
+  }
+
+  // .feedback__button
+
+  &__button {
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.page {
+
+  // .page__works
+
+  &__works {
+    padding-bottom: 20px;
+  }
+}
+.works {
+
+  // .works__container
+
+  &__container {
+  }
+
+  // .works__title
+
+  &__title {
+  }
+
+  // .works__cards
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    @media (min-width: 1114px) {
+      justify-content: space-between;
+    }
+  }
+
+  // .works__card
+
+  &__card {
+    max-width: 532px;
+    padding: 30px;
+    background-color: #fffbf7;
+    box-shadow: 0px 0px 50px 5px rgba(59, 38, 21, 0.1);
+    border-radius: 10px;
+    
+  }
+}
+.card {
+
+  // .card__body
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+  }
+
+  // .card__text-block
+
+  &__text-block {
+  }
+
+  // .card__title
+
+  &__title {
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  // .card__text
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  // .card__list
+
+  &__list {
+    flex-grow: 1;
+    margin-bottom: 10px;
+  }
+
+  // .card__item
+
+  &__item {
+  }
+
+  // .card__buttons
+
+  &__buttons {
+  }
+
+  // .card__button
+
+  &__button {
+  }
+}
+.item-card {
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+
+  // .item-card__plus
+
+  &__plus {
+    color: #e65151;
+    font-size: 36px;
+    line-height: 0.55;
+    font-weight: 400;
+  }
+
+  // .item-card__body
+
+  &__body {
+  }
+
+  // .item-card__title
+
+  &__title {
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+  }
+
+  // .item-card__text
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+}
+
+
+/*----------------------------------------------------------------------YOU-ACTION-------------------------------------------------------------------------------------------------*/
+
+
+.page {
+
+  // .page__you-action
+
+  &__you-action {
+  }
+}
+.you-action {
+
+  // .you-action__container
+
+  &__container {
+  }
+
+  // .you-action__title
+
+  &__title {
+  }
+
+  // .you-action__content
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: 1050px) {
+      flex-direction: row;
+    }
+  }
+
+  // .you-action__image
+
+  &__image {
+    img{
+      width: 100%;
+      @media (min-width: 1050px) {
+        width: 499px;
+        height: 185px;
+      }
+    }
+  }
+
+  // .you-action__text
+
+  &__text {
+  }
+
+  // .you-action__treatment
+
+  &__treatment {
+    .treatment-block__body{
+      max-width: 100%;
+      display: block;
+    }
+  }
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.page {
+
+  // .page__procedure-works
+
+  &__procedure-works {
+  }
+}
+.procedure-works {
+
+  // .procedure-works__container
+
+  &__container {
+  }
+
+  // .procedure-works__title
+
+  &__title {
+  }
+
+  // .procedure-works__list
+
+  &__list {
+  }
+
+  // .procedure-works__item
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  // .procedure-works__image
+
+  &__image {
+    img{
+      width: 495px;
+      height: 353px;
+      border-radius: 25px;
+    box-shadow: 10px 10px 40px 4px rgba(110, 84, 58, 0.4);
+    }
+    
+  }
+
+  // .procedure-works__body
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    p{
+      font-size: 18px;
+      line-height: 1.45;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .procedure-works__stage
+
+  &__stage {
+    color: #3e7ce2;
+    font-size: 34px;
+    line-height: 1.7;
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+  }
+
+  // .procedure-works__result
+
+  &__result {
+    flex-grow: 1;
+  }
+
+  // .procedure-works__button
+
+  &__button {
+  }
+}
+.result-procedure-works {
+
+  //result-procedure-works__text
+
+  &__text{
+    font-size: 18px;
+      line-height: 1.45;
+      font-weight: 300;
+  }
+
+  // .result-procedure-works__list
+
+  &__list {
+  }
+
+  // .result-procedure-works__item
+
+  &__item {
+  
+  }
+}
+
+
+/*----------------------------------------------------DOCTORS--------------------------------------------------------------------------------*/
+
+.page {
+
+  // .page__doctors
+
+  &__doctors {
+  }
+}
+.doctors {
+
+  // .doctors__container
+
+  &__container {
+  }
+
+  // .doctors__list
+
+  &__list {
+    @media (min-width: 600px) {
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+      
+    }
+@media (min-width: 1050px) {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+  }
+
+  // .doctors__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .doctors__image
+
+  &__image {
+    width: 260px;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+
+  // .doctors__title
+
+  &__title {
+    font-size: 26px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  // .doctors__subtitle
+
+  &__subtitle {
+    font-weight: 300;
+  }
+}
+
+
+/*--------------------------------------------FOLLOW--------------------------------------------------------------------------------------*/
+
+.page {
+
+  // .page__follow
+
+  &__follow {
+  }
+}
+.follow {
+
+  // .follow__container
+
+  &__container {
+  }
+
+  // .follow__title
+
+  &__title {
+  }
+
+  // .follow__content
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .follow__image
+
+  &__image {
+  }
+
+  // .follow__body
+
+  &__body {
+  }
+
+  // .follow__subtitle
+
+  &__subtitle {
+  }
+
+  // .follow__parallelogram
+
+  &__parallelogram {
+  }
+
+  // .follow__text
+
+  &__text {
+  }
+
+  // .follow__button
+
+  &__button {
+  }
+}
+
 
 
 
