@@ -2253,6 +2253,27 @@ body._lock {
 
 .popup {
 
+  &_video{
+    .popup__content{
+      background-color: transparent;
+    }
+  }
+  &__video{
+    position: relative;
+    padding: 0 0 50% 0;
+    iframe{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content{
+    width: 100%;
+  }
+
   // .popup__title
 
   &__title {
@@ -2308,4 +2329,5 @@ body._lock {
     }
   }
 }
+
 

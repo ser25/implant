@@ -4,6 +4,9 @@ const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll(".lock-padding");
 
+const videoYoutube = document.querySelector(".youtube-video")
+
+
 let unlock  = true;
 
 const timeout = 800;
@@ -49,6 +52,8 @@ function popupOpen(curentPopup){
 
 function popupClose(popupActive, doUnlock = true){
   if (unlock){
+    let videoSrc = videoYoutube.src
+    videoYoutube.src=videoSrc
     popupActive.classList.remove('open');
     if (doUnlock){
       bodyUnLock();
