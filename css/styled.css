@@ -993,18 +993,31 @@ body._lock {
   display: block;
 }
 
-/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------PROCEDURE-WORKS---------------------------------------------------------------------------------*/
 .procedure-works__item {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  align-items: center;
+  gap: 30px;
   margin-bottom: 30px;
+  flex-direction: column;
+}
+@media (min-width: 1050px) {
+  .procedure-works__item {
+    flex-direction: row;
+    align-items: normal;
+  }
 }
 .procedure-works__image img {
-  width: 495px;
-  height: 353px;
+  width: 100%;
   border-radius: 25px;
   box-shadow: 10px 10px 40px 4px rgba(110, 84, 58, 0.4);
+}
+@media (min-width: 500px) {
+  .procedure-works__image img {
+    width: 495px;
+    height: 353px;
+  }
 }
 .procedure-works__body {
   display: flex;
@@ -1026,11 +1039,21 @@ body._lock {
 .procedure-works__result {
   flex-grow: 1;
 }
+.procedure-works__button {
+  margin-top: 20px;
+}
+
 .result-procedure-works__text {
   font-size: 18px;
   line-height: 1.45;
   font-weight: 300;
 }
+@media (max-width: 1049px) {
+  .procedure-works__image.order_1 {
+    order: 0;
+  }
+}
+
 /*----------------------------------------------------DOCTORS--------------------------------------------------------------------------------*/
 @media (min-width: 600px) {
   .doctors__list {
@@ -1065,12 +1088,115 @@ body._lock {
   font-weight: 300;
 }
 
-/*--------------------------------------------FOLLOW--------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------FOLLOW---------------------------------------------------------------------------------------------------*/
 .follow__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
+@media (min-width: 1100px) {
+  .follow__content {
+    flex-direction: row;
+  }
+}
+.follow__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1100px) {
+  .follow__body {
+    padding-right: 150px;
+  }
+}
+.follow__subtitle {
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+@media (min-width: 1100px) {
+  .follow__subtitle {
+    margin-bottom: 50px;
+  }
+}
+.follow__parallelogram {
+  margin-bottom: 20px;
+}
+@media (min-width: 1100px) {
+  .follow__parallelogram {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 420px) {
+  .follow__text {
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 700;
+  }
+}
+/*----------------------------------------------------------AMENITIES--------------------------------------------------------------------------------------*/
+.amenities__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-direction: column;
+}
+.amenities__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (min-width: 1070px) {
+  .amenities__item {
+    flex-direction: row;
+  }
+  .amenities__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+.amenities__body .item-card:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (min-width: 1070px) {
+  .amenities__body .item-card:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+.amenities__body .item-card__plus {
+  margin-right: 10px;
+}
+.amenities__body .item-card__plus img {
+  width: 45px;
+}
+.amenities__body .item-card__body {
+  max-width: 460px;
+}
+.amenities__image {
+  margin-bottom: 10px;
+}
+@media (min-width: 1070px) {
+  .amenities__image {
+    margin-bottom: 0;
+  }
+}
+.amenities__image img {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 10px 10px 40px 4px rgba(61, 34, 34, 0.4);
+}
+@media (min-width: 520px) {
+  .amenities__image img {
+    width: 500px;
+    height: 360px;
+  }
+}
+@media (max-width: 1069px) {
+  .amenities__image.order_1 {
+    order: 0;
+  }
+}
+
 /*-----------------------------------------------------------------FOOTER----------------------------------------------------------*/
 .footer {
   height: 100px;

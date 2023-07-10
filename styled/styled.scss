@@ -1535,7 +1535,7 @@ body._lock {
 }
 
 
-/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------PROCEDURE-WORKS---------------------------------------------------------------------------------*/
 
 .page {
 
@@ -1566,18 +1566,27 @@ body._lock {
   &__item {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    align-items: center;
+    gap: 30px;
     margin-bottom: 30px;
+    flex-direction: column;
+    @media (min-width: 1050px) {
+      flex-direction: row;
+      align-items: normal;
+    }
   }
 
   // .procedure-works__image
 
   &__image {
     img{
-      width: 495px;
-      height: 353px;
+      width: 100%;
       border-radius: 25px;
-    box-shadow: 10px 10px 40px 4px rgba(110, 84, 58, 0.4);
+      box-shadow: 10px 10px 40px 4px rgba(110, 84, 58, 0.4);
+      @media (min-width: 500px) {
+        width: 495px;
+      height: 353px;
+      }
     }
     
   }
@@ -1615,6 +1624,7 @@ body._lock {
   // .procedure-works__button
 
   &__button {
+    margin-top: 20px;
   }
 }
 .result-procedure-works {
@@ -1636,6 +1646,12 @@ body._lock {
 
   &__item {
   
+  }
+}
+.procedure-works__image.order_1{
+  @media (max-width: 1049px) {
+    order: 0;
+
   }
 }
 
@@ -1704,8 +1720,7 @@ body._lock {
   }
 }
 
-
-/*--------------------------------------------FOLLOW--------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------FOLLOW---------------------------------------------------------------------------------------------------*/
 
 .page {
 
@@ -1732,6 +1747,10 @@ body._lock {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    @media (min-width: 1100px) {
+        flex-direction: row;
+    }
   }
 
   // .follow__image
@@ -1742,21 +1761,44 @@ body._lock {
   // .follow__body
 
   &__body {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 1100px) {
+      padding-right: 150px;
+    }
   }
 
   // .follow__subtitle
 
   &__subtitle {
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 400;
+    margin-bottom: 15px;
+    @media (min-width: 1100px) {
+      margin-bottom: 50px;
+    }
   }
 
   // .follow__parallelogram
 
   &__parallelogram {
+    margin-bottom: 20px;
+    @media (min-width: 1100px) {
+      margin-bottom: 50px;
+    }
   }
 
   // .follow__text
 
   &__text {
+    @media (min-width: 420px) {
+      font-size: 20px;
+      line-height: 1.35;
+      font-weight: 700;
+    }
   }
 
   // .follow__button
@@ -1764,6 +1806,127 @@ body._lock {
   &__button {
   }
 }
+
+
+
+/*----------------------------------------------------------AMENITIES--------------------------------------------------------------------------------------*/
+
+.page {
+
+  // .page__amenities
+
+  &__amenities {
+  }
+}
+.amenities {
+
+  // .amenities__container
+
+  &__container {
+  }
+
+  // .amenities__title
+
+  &__title {
+  }
+
+  // .amenities__list
+
+  &__list {
+  
+  }
+
+  // .amenities__item
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+   
+    @media (min-width: 1070px) {
+      flex-direction: row;
+      
+      &:not(:last-child){
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // .amenities__body
+
+  &__body {
+    .item-card {
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+      @media (min-width: 1070px) {
+        &:not(:last-child){
+          margin-bottom: 40px;
+        }
+      }
+
+      // .item-card__plus
+    
+      &__plus {
+        margin-right: 10px;
+        img{
+          width: 45px;
+        }
+        
+      }
+    
+      // .item-card__body
+    
+      &__body {
+        max-width: 460px;
+      }
+    
+      // .item-card__text
+    
+      &__text {
+      }
+    }
+    
+  }
+
+  // .amenities__image
+
+  &__image{
+    margin-bottom: 10px;
+    
+    @media (min-width: 1070px) {
+      margin-bottom: 0;
+    }
+    img{
+      width: 100%;
+      border-radius: 25px;
+      box-shadow: 10px 10px 40px 4px rgba(61, 34, 34, 0.4);
+      @media (min-width: 520px) {
+        width: 500px;
+      height: 360px;
+      }
+    }
+    
+
+  }
+
+  // .amenities__card
+
+  &__card {
+  }
+}
+.amenities__image.order_1{
+  @media (max-width: 1069px) {
+    order: 0;
+  }
+  
+}
+
 
 
 
