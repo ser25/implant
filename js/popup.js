@@ -5,17 +5,30 @@ const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll(".lock-padding");
 
 const videoYoutube = document.querySelector(".youtube-video")
+const popupdisplayed = sessionStorage.getItem('popupdisplayed');
+
+
 
 
 let unlock  = true;
 
 const timeout = 800;
 
+
+if(popupdisplayed === null){
+  let popupName = 'popup'
+  const curentPopup = document.getElementById(popupName);
+  popupOpen(curentPopup)
+  sessionStorage.setItem('popupdisplayed', true);
+}
+
+
 if (popupLinks.length > 0){
   for (let index = 0; index < popupLinks.length; index++){
     const popupLink = popupLinks[index];
     popupLink.addEventListener("click", function(e){
       const popupName = popupLink.getAttribute('href').replace('#','');
+      console.log(popupName);
       const curentPopup = document.getElementById(popupName);
       popupOpen(curentPopup);
       e.preventDefault();
@@ -34,6 +47,7 @@ if (popupCloseIcon.length > 0){
 }
 
 function popupOpen(curentPopup){
+  console.log(curentPopup);
   if (curentPopup && unlock){
     const popupActive = document.querySelector('.popup.open');
     if (popupActive){

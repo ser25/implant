@@ -1,4 +1,8 @@
 
+// let gotopbtn = document.querySelector('.circle-phone');
+// window.addEventListener("scroll", (event) => window.scrollY >= 32 ? gotopbtn.classList.add('show-phone') : gotopbtn.classList.remove('show-phone'));
+
+
 // Меню бургер 
 
 const iconMenu = document.querySelector('.menu__icon')
