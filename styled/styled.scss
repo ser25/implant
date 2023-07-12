@@ -344,6 +344,15 @@ body._lock {
         }
     }
 
+    &__textarea{
+      line-height: 150%;
+      padding: 0 0 0 16px;
+      width: 100%;
+      height: 50px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      resize: none;
+    }
+
     // .treatment-bloc__submit
 
     &__submit {
@@ -2178,7 +2187,8 @@ body._lock {
 .circle-phone {
  
   // @media (min-height: 1000px) {
-    display: block;
+
+    z-index: 2;
     background-color: #9C5EC7;
     position: fixed;
     left: 1%;
