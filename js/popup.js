@@ -18,7 +18,9 @@ const timeout = 800;
 if(popupdisplayed === null){
   let popupName = 'popup'
   const curentPopup = document.getElementById(popupName);
-  popupOpen(curentPopup)
+  setTimeout(() => {
+    popupOpen(curentPopup)
+  }, 15000)
   sessionStorage.setItem('popupdisplayed', true);
 }
 
