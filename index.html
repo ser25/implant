@@ -76,7 +76,7 @@
                 <div class="treatment__container">
                     <div class="treatment-block__body">
                         <h2 class="treatment-block__title">Запишіться на огляд</h2>
-                        <form class="treatment-block__form">
+                        <form class="treatment-block__form" method="post" action="mail/callback.php">
                             <div>
                                 <label class="treatment-block__label" for="name">Введіть ваше ім'я:</label>
                             <input class="treatment-block__input" type="text" id="name" name="name" required>
@@ -86,7 +86,7 @@
                             <input class="treatment-block__input" type="tel" id="phone" name="phone" required>
                             </div>
                             <div class="treatment-block__submit" type="submit">
-                                <a href="#" class="button">Записатися на огляд</a>
+                                <input type="submit" class="button" value="Записатися на огляд">
                             </div>
                         </form>
                         <div class="treatment-block__text">*На огляді ми складемо детальний план лікування та розрахуємо вартість</div>
@@ -248,7 +248,7 @@
                         <div class="review__treatment">
                             <div class="treatment-block__body">
                                 <h2 class="treatment-block__title">Запишіться на огляд</h2>
-                                <form class="treatment-block__form">
+                                <form class="treatment-block__form" method="post" action="mail/callback.php">
                                     <div>
                                         <label class="treatment-block__label" for="name">Введіть ваше ім'я:</label>
                                     <input class="treatment-block__input" type="text" id="name" name="name" required>
@@ -258,7 +258,7 @@
                                     <input class="treatment-block__input" type="tel" id="phone" name="phone" required>
                                     </div>
                                     <div class="treatment-block__submit" type="submit">
-                                        <a href="#" class="button">Записатися на огляд</a>
+                                        <input type="submit" class="button" value="Записатися на огляд">
                                     </div>
                                 </form>
                                 <div class="treatment-block__text">*На огляді ми складемо детальний план лікування та розрахуємо вартість</div>
@@ -521,7 +521,7 @@
                         <div class="you-action__treatment">
                             <div class="treatment-block__body">
                                 <h2 class="treatment-block__title">Запишіться на огляд</h2>
-                                <form class="treatment-block__form">
+                                <form class="treatment-block__form" method="post" action="mail/callback.php">
                                     <div>
                                         <label class="treatment-block__label" for="name">Введіть ваше ім'я:</label>
                                     <input class="treatment-block__input" type="text" id="name" name="name" required>
@@ -531,7 +531,7 @@
                                     <input class="treatment-block__input" type="tel" id="phone" name="phone" required>
                                     </div>
                                     <div class="treatment-block__submit" type="submit">
-                                        <a href="#" class="button">Записатися на огляд</a>
+                                        <input type="submit" class="button" value="Записатися на огляд">
                                     </div>
                                 </form>
                                 <div class="treatment-block__text">*На огляді ми складемо детальний план лікування та розрахуємо вартість</div>
@@ -860,7 +860,7 @@
                     <div class="any-questions__treatment">
                         <div class="treatment-block__body">
                             <h2 class="treatment-block__title">Напишіть їх в формі нижче, <br>  надамо відповідь протягом 5 хвилин  </h2>
-                            <form class="treatment-block__form">
+                            <form class="treatment-block__form" method="post" action="mail/callback.php">
                                 <div>
                                     <label class="treatment-block__label" for="name">Введіть ваше ім'я:</label>
                                 <input class="treatment-block__input" type="text" id="name" name="name" required="">
@@ -872,12 +872,11 @@
                                 <div>
                                     <label class="treatment-block__label" for="text">Введіть запитання:</label>
                                     <div>
-                                        <textarea class="treatment-block__textarea" resize="none" name="" id=""></textarea>
+                                        <textarea class="treatment-block__textarea" type="text" resize="none" name="message" id="message"></textarea>
                                     </div>
-                                    
                                 </div>
                                 <div class="treatment-block__submit" type="submit">
-                                    <a href="#" class="button">Записатися на огляд</a>
+                                    <input type="submit" class="button" value="Записатися на огляд">
                                 </div>
                             </form>
                         </div>
@@ -964,15 +963,11 @@
                     <a href="#" class="popup__close close-popup">X</a>
                             <h2 class="popup__title">Залиште заявку</h2>
                             <div class="popup__subtitle">і ми передзвонимо вам протягом 5 хвилин</div>
-                            <form class="popup__form">
-                        
+                            <form class="popup__form" method="post" action="mail/callback.php">
                                     <input class="popup__input" type="text" id="name" name="name" required="" placeholder="Введіть ваше ім'я:">
-                                
-                                
                                     <input class="popup__input" type="tel" id="phone" name="phone" required="" placeholder="Введіть телефон:">
-                               
                                 <div class="popup__submit" type="submit">
-                                    <a href="#" class="button">Замовити дзвінок</a>
+                                    <input type="submit" class="button" value="Замовити дзвінок">
                                 </div>
                             </form>
                 </div>
@@ -985,15 +980,11 @@
                 <div class="popup__content">
                     <a href="#" class="popup__close close-popup">X</a>
                             <h2 class="popup__title">Отримайте консультацію <br> главлікаря</h2>
-                            <form class="popup__form">
-                        
+                            <form class="popup__form" method="post" action="mail/callback.php">
                                     <input class="popup__input" type="text" id="name" name="name" required="" placeholder="Введіть ваше ім'я:">
-                                
-                                
                                     <input class="popup__input" type="tel" id="phone" name="phone" required="" placeholder="Введіть телефон:">
-                               
                                 <div class="popup__submit" type="submit">
-                                    <a href="#" class="button">Отримати консультацію</a>
+                                    <input type="submit" class="button" value="Отримати консультацію">
                                 </div>
                             </form>
                 </div>
@@ -1007,15 +998,11 @@
                 <div class="popup__content">
                     <a href="#" class="popup__close close-popup">X</a>
                             <h2 class="popup__title">Запишіться на огляд</h2>
-                            <form class="popup__form">
-                        
+                            <form class="popup__form" method="post" action="mail/callback.php">
                                     <input class="popup__input" type="text" id="name" name="name" required="" placeholder="Введіть ваше ім'я:">
-                                
-                                
                                     <input class="popup__input" type="tel" id="phone" name="phone" required="" placeholder="Введіть телефон:">
-                               
                                 <div class="popup__submit" type="submit">
-                                    <a href="#" class="button">Записатися</a>
+                                    <input type="submit" class="button" value="Записатися">
                                 </div>
                             </form>
                 </div>
@@ -1029,15 +1016,11 @@
                 <div class="popup__content">
                     <a href="#" class="popup__close close-popup">X</a>
                             <h2 class="popup__title">Розрахувати вартість <br> імплантації</h2>
-                            <form class="popup__form">
-                        
+                            <form class="popup__form" method="post" action="mail/callback.php">
                                     <input class="popup__input" type="text" id="name" name="name" required="" placeholder="Введіть ваше ім'я:">
-                                
-                                
                                     <input class="popup__input" type="tel" id="phone" name="phone" required="" placeholder="Введіть телефон:">
-                               
                                 <div class="popup__submit" type="submit">
-                                    <a href="#" class="button">Розрахувати вартість</a>
+                                    <input type="submit" class="button" value="Розрахувати вартість">
                                 </div>
                             </form>
                 </div>
@@ -1051,13 +1034,13 @@
                 <div class="popup__content">
                     <a href="#" class="popup__close close-popup">X</a>
                             <h2 class="popup__title">Залиште свій відгук</h2>
-                            <form class="popup__form">
+                            <form class="popup__form" method="post" action="mail/callback.php">
                                     <input class="popup__input" type="text" id="name" name="name" required="" placeholder="Введіть ваше ім'я:">
                                     <input class="popup__input" type="email" id="name" name="email" required="" placeholder="Введіть ваше e-mail:">
                                     <input class="popup__input" type="tel" id="phone" name="phone" required="" placeholder="Введіть телефон:">
                                     <textarea class="popup__input" name="review" id="text" placeholder="Напишіть свій відгук:" rows="3"></textarea>
                                 <div class="popup__submit" type="submit">
-                                    <a href="#" class="button">Залишити відгук</a>
+                                    <input type="submit" class="button" value="Залишити відгук">
                                 </div>
                             </form>
                 </div>
